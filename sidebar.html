@@ -1,0 +1,1002 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sidebar Content Start -->
+<div class="sticky-top" style="top: 100px;">
+    
+    <!-- 1. EMI CALCULATOR WIDGET -->
+   
+
+
+<div class="card border-0 shadow-sm mb-4 rounded-4 overflow-hidden">
+    <div class="card-header bg-dark text-white fw-bold py-3 text-uppercase small">
+        <i class="fas fa-calculator me-2 text-danger"></i> Quick EMI Check
+    </div>
+    <div class="card-body bg-white p-3">
+        <div class="mb-2">
+            <label class="small fw-bold text-muted">Amount (₹)</label>
+            <!-- oninput lagane se ye apne aap calculate karega -->
+            <input type="number" id="loanAmount" oninput="autoEMI()" class="form-control form-control-sm shadow-none" placeholder="e.g. 500000">
+        </div>
+        <div class="row g-2 mb-3">
+            <div class="col-6">
+                <label class="small fw-bold text-muted">Interest %</label>
+                <input type="number" id="interestRate" oninput="autoEMI()" class="form-control form-control-sm shadow-none" placeholder="8.5">
+            </div>
+            <div class="col-6">
+                <label class="small fw-bold text-muted">Years</label>
+                <input type="number" id="loanTenure" oninput="autoEMI()" class="form-control form-control-sm shadow-none" placeholder="5">
+            </div>
+        </div>
+        
+        <!-- Result Box (Hamesha dikhega ya auto-update hoga) -->
+        <div id="emiResult" class="p-2 border rounded-3 text-center bg-light mb-2">
+            <p class="mb-0 small text-muted" style="font-size: 10px;">Estimated Monthly EMI</p>
+            <h4 class="fw-bold text-danger mb-0">₹<span id="emiValue">0</span></h4>
+        </div>
+
+        <div class="text-center">
+            <a href="/emi-calculator.html" class="small text-muted fw-bold text-decoration-none border-bottom border-danger">Detailed Calculator →</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- FUEL CALCULATOR WIDGET (NEW) -->
+    <div class="card border-0 shadow-sm mb-4 rounded-4 overflow-hidden">
+        <div class="card-header bg-success text-white fw-bold py-3 text-uppercase small">
+            <i class="fas fa-gas-pump me-2"></i> Fuel Cost Check
+        </div>
+        <div class="card-body bg-white p-3">
+            <div class="mb-2">
+                <label class="small fw-bold text-muted">Trip Distance (km)</label>
+                <input type="number" id="sideDist" oninput="autoFuelSide()" class="form-control form-control-sm shadow-none" placeholder="e.g. 100">
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-6">
+                    <label class="small fw-bold text-muted">Mileage</label>
+                    <input type="number" id="sideMil" oninput="autoFuelSide()" class="form-control form-control-sm shadow-none" placeholder="18">
+                </div>
+                <div class="col-6">
+                    <label class="small fw-bold text-muted">Fuel Price</label>
+                    <input type="number" id="sidePrice" oninput="autoFuelSide()" class="form-control form-control-sm shadow-none" placeholder="96.5">
+                </div>
+            </div>
+            
+            <div id="fuelResultSide" class="p-2 border rounded-3 text-center bg-light mb-2">
+                <p class="mb-0 small text-muted" style="font-size: 10px;">Estimated Cost</p>
+                <h4 class="fw-bold text-success mb-0">₹<span id="sideFuelValue">0</span></h4>
+            </div>
+
+            <div class="text-center">
+                <a href="/tools/fuel-calculator/" class="small text-muted fw-bold text-decoration-none border-bottom border-success">Detailed Fuel & EV Tool →</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 2. QUICK CAR COMPARE WIDGET -->
+    <div class="card border-0 shadow-sm mb-4 rounded-4 overflow-hidden text-center">
+        <div class="card-header bg-danger text-white fw-bold py-3 text-uppercase small">
+            <i class="fas fa-shuffle me-2"></i> Compare Your Fav Cars
+        </div>
+        <div class="card-body bg-light p-3">
+            <select class="form-select form-select-sm mb-2 shadow-none border-0 py-2">
+                <option selected disabled>Select Car 1</option>
+                <option>Tata Nexon</option>
+                <option>Mahindra XUV 3XO</option>
+                <option>Hyundai Creta</option>
+            </select>
+            <div class="small fw-bold text-muted mb-2">VS</div>
+            <select class="form-select form-select-sm mb-3 shadow-none border-0 py-2">
+                <option selected disabled>Select Car 2</option>
+                <option>Maruti Brezza</option>
+                <option>Kia Sonet</option>
+                <option>Mahindra Thar</option>
+            </select>
+            <button class="btn btn-dark btn-sm w-100 rounded-pill fw-bold py-2">Compare Now</button>
+        </div>
+    </div>
+
+    <!-- 3. HOT TRENDING NOW -->
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+        <div class="card-header bg-dark text-white fw-bold py-3 text-uppercase small">
+            <i class="fas fa-fire me-2 text-warning"></i> Hot Trending Now
+        </div>
+        <div class="list-group list-group-flush">
+            <a href="/brands/tata/sierra-ev.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/tata/hero-bg.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Sierra">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Tata Sierra EV Revealed</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">Range: 500+ KM</div>
+                    </div>
+                </div>
+            </a>
+            <a href="/brands/mahindra/thar-roxx.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/mahindra/thar-roxx.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Thar">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Thar Roxx 5-Door Price</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">Starts ₹12.99 Lakh</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <a href="/brands/mahindra/xuv3xo.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/mahindra/xuv3xo.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="xuv3xo.webp">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Mahindra XUV 7XO</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹14.50 Lakh (Expected)*</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/brands/mahindra/mahindra-be-6e.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/mahindra/Mahindra BE 6e.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Mahindra BE 6e.webp">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Mahindra BE 6e</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹18 Lakh to ₹22 Lakh</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+            <!-- Mahindra XEV 9e Sidebar Link -->
+<a href="/brands/mahindra/mahindra-xev-9e-review-price-range.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image: Make sure to save your XEV 9e image with this name or use the URL -->
+        <img src="/assets/img/cars/mahindra/mahindra-xev-9e-exterior-design-white-color.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Mahindra XEV 9e">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Mahindra XEV 9e (Electric SUV)</div>
+            <div class="text-success fw-bold" style="font-size: 10px;">₹21.90 Lakh onwards*</div>
+            <span class="badge bg-danger" style="font-size: 8px;">TRENDING 🔥</span>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+<!-- Mahindra Bolero 2026 Sidebar Item -->
+<a href="/brands/mahindra/mahindra-bolero-2026-review-price-features.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for Bolero 2026 Rugged Legend -->
+        <img src="/assets/img/cars/mahindra/bolero/mahindra-bolero-2026-7-seater-suv-price.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Mahindra Bolero 2026 rugged SUV review, mHawk engine performance, 7 seater capacity and price in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Mahindra Bolero 2026 (Rugged Legend)</div>
+            <!-- Bolero expected price range for 2026 -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹9.90 - ₹12.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+             <a href="/brands/tata/nexon.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/tata/nexon.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Nexon">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Tata Nexon EV</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹8.00 - ₹16.80 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+             <a href="/brands/tata/punch.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/tata/tata-punch-2026-chota-packet-bada-dhamaka-review.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="2026 Tata Punch futuristic model parked on a rain-washed neon city street with connected LED DRLs.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Tata Punch EV</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹6.50 - ₹14.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+
+            <a href="/brands/tata/tata-tiago-review-safety-mileage.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path aur Alt text SEO optimized rakha hai -->
+        <img src="/assets/img/cars/tata/tata-tiago-2026-blue-safest-hatchback-highway.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Tata Tiago 2026 4-star safety rated hatchback review and price analysis in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Tata Tiago 2026</div>
+            <!-- Tiago ka actual price range -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹5.65 - ₹8.90 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+             <a href="/brands/hyundai/creta.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/hyundai/hyundai-creta-2026-king-of-suv-emerald-green.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="ew 2026 Hyundai Creta Electric white color with connected LED lighting and aero wheels.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Hyundai Creta 2026</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹11.50 - ₹21.20 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+             <a href="/brands/hyundai/creta-ev.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/hyundai/hyundai-creta-ev-2026-silent-luxury-blue.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Hyundai Creta EV in lucid blue color driving through a misty forest road at sunset.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">The Electric Icon
+Hyundai Creta EV</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹18.00 - ₹24.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+             <a href="/brands/hyundai/exter.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/hyundai/hyundai-exter-2026-weekend-vibe-camping-review.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Hyundai Exter khaki color parked at a lakeside camping site with a tent during sunrise.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Hyundai Exter 2026</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹6.20 - ₹10.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+
+
+
+
+             <a href="/brands/hyundai/verna.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/hyundai/hyundai-verna-2026-low-slung-beast-black.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Hyundai Verna black color with red body kit driving on a futuristic neon city street.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Hyundai Verna 2026</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹11.20 - ₹19.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="/brands/hyundai/hyundai-creta-n-line-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path aur Alt text N-Line ke hisaab se SEO optimized hai -->
+        <img src="/assets/img/cars/hyundai/hyundai-creta-n-line-thunder-blue-exterior-highway.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Hyundai Creta N Line 2026 sporty SUV review, price, and exhaust sound analysis by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Hyundai Creta N Line</div>
+            <!-- Creta N Line ka actual price range -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹16.82 - ₹20.45 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+<a href="/brands/hyundai/hyundai-aura-review-2026.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path aur Alt text Aura ke hisaab se SEO optimized hai -->
+        <img src="/assets/img/cars/hyundai/hyundai-aura-2026-exterior-front-design-blue.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Hyundai Aura 2026 premium sedan review, mileage, and family safety features by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Hyundai Aura</div>
+            <!-- Aura ka actual price range (Blue color for premium feel) -->
+            <div class="text-primary fw-bold" style="font-size: 10px; color: #0a3d62 !important;">₹6.49 - ₹9.05 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+<a href="/brands/honda/honda-amaze-2026-launch.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/honda/honda-amaze-2026-family-sedan-red-color.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Honda Amaze red color facelift parked in front of a modern premium house.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Honda Amaze 2026</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹7.50 - ₹10.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+
+
+             <a href="/brands/maruti/evx.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/maruti/maruti-suzuki-evx-2026-electric-suv-kitna-deti-hai.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Maruti Suzuki eVX electric SUV in grey color charging at a high-tech station at night.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Maruti Suzuki eVX</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹18.50 - ₹25.00 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="/brands/maruti/maruti-suzuki-dzire-2026-price-mileage-safety-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <img src="/assets/img/cars/maruti/maruti-suzuki-dzire-2026-rear-led-taillights-design.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Maruti Suzuki Dzire sedan in white color with premium LED design.">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Maruti Suzuki Dzire 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹6.79 - ₹10.14 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+             <a href="/brands/maruti/fronx.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/maruti/maruti-suzuki-fronx-2026-urban-lifestyle-red.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Maruti Suzuki Fronx red color premium coupe-SUV parked in front of a modern urban cafe.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Maruti Suzuki Fronx</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹7.80 - ₹13.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+             <a href="/brands/maruti/grand-vitara.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/maruti/maruti-grand-vitara-2026-luxury-hybrid-blue.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Maruti Suzuki Grand Vitara blue color luxury SUV parked in front of a modern villa during sunset.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Maruti Grand Vitara</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹10.99 - ₹20.10 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+
+             <a href="/brands/maruti/swift.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/maruti/maruti-swift-2026-emotion-hatchback-red-sunset.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Maruti Suzuki Swift red color rear view on a mountain winding road during sunset.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Maruti Suzuki Swift</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹6.49 - ₹9.64 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+             <a href="/brands/skoda/kodiaq.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/skoda/skoda-kodiaq-2026-luxury-7-seater-suv.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Skoda Kodiaq grey color premium 7-seater SUV with LED Matrix lights.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">New Skoda Kodiaq</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹39.99 - ₹42.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+
+             <a href="/brands/skoda/kushaq.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/skoda/skoda-kushaq-2026-facelift-price-india.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Skoda Kushaq honey orange color parked on a rocky mountain path, 5-star safe family SUV.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Skoda Kushaq 2026 Facelift: Booking Starts Tomorrow!</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹10.89 - ₹18.79 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+             <a href="/brands/skoda/kylaq.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/skoda/skoda-kylaq-2026-european-compact-suv-blue.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Skoda Kylaq lava blue color sub-compact SUV with sharp LED DRLs.">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Skoda Kylaq</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹7.89 - ₹14.50 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+
+             <a href="/brands/skoda/slavia.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/img/cars/skoda/skoda-slavia-2026-emotion-sedan-blue.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Skoda Slavia lava blue color luxury sedan driving on a city highway at night">
+                    <div>
+                        <div class="fw-bold small lh-sm mb-1">Skoda Slavia</div>
+                        <div class="text-danger fw-bold" style="font-size: 10px;">₹10.69 - ₹18.66 Lakh*</div>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <!-- Skoda Kylaq Sidebar Link -->
+<a href="/brands/skoda/skoda-kylaq-2026-comprehensive-review-india.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <img src="/assets/img/cars/skoda/skoda-kylaq-2026-european-compact-suv-blue.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="New 2026 Skoda Kylaq SUV expert review and price analysis in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Skoda Kylaq 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹7.89 - ₹16.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+            <a href="/categories/comparisons/tata-punch-2026-vs-maruti-fronx-hybrid.html" class="list-group-item list-group-item-action py-3 ">
+    <div class="d-flex align-items-center">
+        <div class="me-3 text-center" style="width: 65px;">
+            <i class="fas fa-exchange-alt text-primary"></i>
+        </div>
+        <div>
+            <div class="fw-bold small lh-sm mb-1   text-danger">Punch vs Fronx: Real 35kmpl Truth! 😱</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">Click to See Reality</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+<!-- Maruti Dzire Hybrid vs Honda Amaze 2026 -->
+<a href="/categories/comparisons/maruti-dzire-hybrid-vs-honda-amaze-2026.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <div class="me-3 text-center" style="width: 65px;">
+            <i class="fas fa-exchange-alt text-primary"></i>
+        </div>
+        <div>
+            <div class="fw-bold small lh-sm mb-1 text-danger">maruti-dzire-hybrid-vs-honda-amaze-2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">Compare Specs & Features</div>
+        </div>
+    </div>
+</a>
+
+
+<!-- Maruti Alto 2026 Launch -->
+<a href="/brands/maruti/new-maruti-alto-2026-launch-price-mileage.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <div class="me-3 text-center" style="width: 65px;">
+            <i class="fas fa-car-side text-primary"></i>
+        </div>
+        <div>
+            <div class="fw-bold small lh-sm mb-1 text-danger">New Maruti Alto 2026 Launch</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">Price, Mileage & Features</div>
+        </div>
+    </div>
+</a>
+
+
+<a href="/brands/maruti/maruti-e-vitara-electric-suv-launch-date-price-features.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <div class="me-3 text-center" style="width: 65px;">
+            <i class="fas fa-bolt text-warning" style="font-size: 24px;"></i>
+        </div>
+        <div>
+            <div class="fw-bold small lh-sm mb-1 text-danger">Maruti e Vitara 2026: 500km Range SUV</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">Check Launch Date & Specs</div>
+        </div>
+    </div>
+</a>
+
+
+
+<!-- Maruti Wagon R 2026 Sidebar Item -->
+<a href="/brands/maruti/maruti-wagonr-2026-complete-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for Wagon R 2026 -->
+        <img src="/assets/img/cars/maruti/maruti-wagon-r-2026-new-model-exterior-design.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Maruti Suzuki Wagon R 2026 model review, 35km mileage, price and features by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Maruti Suzuki Wagon R (2026)</div>
+            <!-- Wagon R expected price range -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹5.99 - ₹8.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+<!-- Maruti Brezza 2026 Sidebar Item -->
+<a href="/brands/maruti/maruti-brezza-2026-facelift-launch-date-price-features.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for Brezza 2026 Facelift -->
+        <img src="/assets/img/cars/maruti/brezza/maruti-brezza-2026-facelift-exterior-white.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Maruti Suzuki Brezza 2026 facelift review, ADAS features, 30km mileage and launch date in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Maruti Brezza 2026 (ADAS Facelift)</div>
+            <!-- Brezza expected price range for 2026 -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹8.49 - ₹14.30 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+<!-- Maruti Baleno Strong Hybrid 2026 Sidebar Item -->
+<a href="/brands/maruti/maruti-baleno-2026-strong-hybrid-price-mileage-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Jo Baleno ki blue color wali image hai uska path yahan daalein -->
+        <img src="/assets/img/cars/maruti/baleno/maruti-baleno-2026-rear-look-design.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Maruti Baleno 2026 Strong Hybrid price, 35kmpl mileage, and review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Maruti Baleno Strong Hybrid</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹6.66 - ₹11.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+<!-- Maruti Ertiga 2026 Sidebar Item -->
+<a href="/brands/maruti/maruti-ertiga-2026-price-7-seater-mileage-india.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Jo Leonardo se Ertiga ki image banayi hai uska path -->
+        <img src="/assets/img/cars/maruti/ertiga/maruti-ertiga-2026-featured.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Maruti Ertiga 2026 price, 7 seater space, and CNG mileage review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Maruti Ertiga 2026 (7-Seater)</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹8.69 - ₹13.03 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+<!-- Maruti Celerio 2026 Sidebar Item -->
+<a href="/brands/maruti/new-maruti-alto-2026-launch-price-mileage.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        
+        <img src="/assets/img/cars/maruti/celerio/maruti-celerio-2026-blue-mileage-performance.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Maruti Celerio 2026 on-road price, 31km/kg mileage, and budget review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Maruti Celerio 2026 (Mileage Queen)</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹5.37 - ₹7.14 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+<!-- Skoda Kushaq 2026 vs Hyundai Creta Comparison -->
+<a href="/categories/comparisons/skoda-kushaq-2026-vs-hyundai-creta.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <div class="me-3 text-center" style="width: 65px;">
+            <!-- Icon change to car for better look -->
+            <i class="fas fa-car-side text-success" style="font-size: 20px;"></i>
+        </div>
+        <div>
+            <!-- URL-friendly Name as per your style -->
+            <div class="fw-bold small lh-sm mb-1 text-success">skoda-kushaq-2026-vs-hyundai-creta</div>
+            <div class="text-success fw-bold" style="font-size: 10px; text-transform: uppercase;">Compare Specs & Features</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+
+<!-- Renault Duster 2026 Sidebar Item -->
+<a href="/brands/renault/renault-duster-2026-launch-price-india-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for Renault Duster 2026 -->
+        <img src="/assets/img/cars/renault/duster/renault-duster-2026-front-design-led-lights.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Renault Duster 2026 review, 4x4 hybrid engine, price and launch details in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Renault Duster 2026 (4x4 Hybrid)</div>
+            <!-- Duster expected price range for 2026 -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹10.99 - ₹17.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+<!-- Kia Clavis 2026 Sidebar Item -->
+<a href="/brands/kia/kia-clavis-review-price-india.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for Kia Clavis -->
+        <img src="/assets/img/cars/kia/kia-clavis-2026-front-design-led-headlights.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Kia Clavis 2026 review, ADAS Level 2, interior features, price and mileage in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Kia Clavis 2026 (Rugged SUV)</div>
+            <!-- Kia Clavis expected price range for 2026 -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹9.50 - ₹15.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+<!-- Kia Seltos New Variants Sidebar Item -->
+<a href="/brands/kia/kia-seltos-new-variants-2024-features.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for Kia Seltos -->
+        <img src="/assets/img/cars/kia/seltos/kia-seltos-2026-new-variants-main.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Kia Seltos 2024 new variants, Gravity Edition features, ADAS Level 2, price and mileage in India by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Kia Seltos 2024 (New Variants)</div>
+            <!-- Kia Seltos current price range -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹10.90 - ₹20.35 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+<!-- MG Windsor EV Sidebar Item -->
+<a href="/brands/mg/windsor-ev.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <img src="/assets/img/cars/mg/windsor/mg-windsor-ev-sidebar.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="MG Windsor EV 2026 review, BaaS model, range and luxury features India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">MG Windsor EV (BaaS Model)</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹13.50 - ₹16.00 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+<!-- MG Hector 2026 Sidebar Item -->
+<a href="/brands/mg/hector.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path and Alt text optimized for MG Hector 2026 -->
+        <img src="/assets/img/cars/mg/hector/mg-hector-2026-sidebar.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="MG Hector 2026 facelift review, 14-inch screen, ADAS and luxury interior features by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">MG Hector 2026 (Luxury SUV)</div>
+            <!-- Hector expected price range for 2026 -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹14.99 - ₹23.00 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+<!-- Maruti vs Mahindra vs Tata EV Comparison - Sidebar Link -->
+<a href="/categories/comparisons/maruti-ev-vs-mahindra-be6e-vs-tata-harrier-ev.html" class="list-group-item list-group-item-action py-3 shadow-sm border-start border-danger border-4">
+    <div class="d-flex align-items-center">
+        <div class="me-3 text-center" style="width: 65px;">
+            <!-- Icon changed to bolt for Electric Feel -->
+            <i class="fas fa-bolt text-danger" style="font-size: 22px;"></i>
+        </div>
+        <div>
+            <!-- Viral URL-friendly Name -->
+            <div class="fw-bold small lh-sm mb-1 text-danger">maruti-ev-vs-mahindra-vs-tata-battle</div>
+            <div class="text-dark fw-bold" style="font-size: 10px; text-transform: uppercase;">2026 Mega Electric Battle 🔥</div>
+        </div>
+    </div>
+</a>
+
+
+          
+
+
+<!-- Renault Duster vs Creta Sidebar Link - VishTech Cars -->
+<a href="/categories/comparisons/renault-duster-2026-vs-hyundai-creta.html" class="list-group-item list-group-item-action py-3 vishtechcars-sidebar-item shadow-sm mb-2" style="border-left: 5px solid #ff9933;">
+    <div class="d-flex align-items-center">
+        <!-- Iconic Icon for Comparison -->
+        <div class="me-3 text-center" style="width: 50px;">
+            <i class="bi bi-fire text-warning" style="font-size: 1.5rem;"></i>
+        </div>
+        <div>
+            <!-- Viral Catchy Title -->
+            <div class="fw-bold small lh-sm mb-1 text-dark">Duster vs Creta: Mountain Lion or City King? 😱</div>
+            <!-- Action Sub-text -->
+            <div class="text-danger fw-bold" style="font-size: 10px; letter-spacing: 0.5px;">SHOCKING 4x4 REALITY INSIDE</div>
+        </div>
+    </div>
+</a>
+
+<style>
+    /* Chota sa hover animation clicks badhane ke liye */
+    .vishtechcars-sidebar-item:hover {
+        background-color: #fff9f0 !important;
+        transform: translateX(5px);
+        transition: 0.3s;
+    }
+</style>
+
+            
+
+
+<!-- Toyota Mini Fortuner Sidebar Link - VishTech Cars -->
+<a href="/brands/toyota/toyota-mini-fortuner-launch-date-price-india-2026.html" class="list-group-item list-group-item-action py-3 vishtechcars-sidebar-item shadow-sm mb-2" style="border-left: 5px solid #d32f2f;">
+    <div class="d-flex align-items-center">
+        <!-- Iconic Icon for Dreams/Toyota -->
+        <div class="me-3 text-center" style="width: 50px;">
+            <i class="bi bi-star-fill text-danger" style="font-size: 1.5rem;"></i>
+        </div>
+        <div>
+            <!-- Viral Catchy Title -->
+            <div class="fw-bold small lh-sm mb-1 text-dark">Mini Fortuner: Dream at ₹8 Lakhs! 😱</div>
+            <!-- Action Sub-text -->
+            <div class="text-danger fw-bold" style="font-size: 10px; letter-spacing: 0.5px;">SABKA SAPNA SACH HUA</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+<!-- Toyota Ebella Sidebar Item -->
+<a href="/brands/toyota/toyota-urban-cruiser-ebella-price-range-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path aur Alt text Ebella EV ke hisaab se SEO optimized hai -->
+        <img src="/assets/img/cars/fortuner/toyota-urban-cruiser-ebella-2026-exterior-front-design.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Toyota Urban Cruiser Ebella 2026 electric SUV review, 550km range, and price details by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Toyota Urban Cruiser Ebella (EV)</div>
+            <!-- Ebella ka expected price range -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹17.90 - ₹24.00 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+<!-- Toyota Taisor Facelift Sidebar Item -->
+<a href="/brands/toyota/toyota-taisor-facelift-2026.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <img src="/assets/img/cars/fortuner/toyota taisor-faclift/toyota-taisor-facelift-2026-rear-connected-led-lights.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Toyota Taisor Facelift 2026 price, hybrid mileage, and review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Toyota Taisor Facelift 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹7.90 - ₹13.20 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+<!-- Toyota Hyryder Hybrid Sidebar Item -->
+<a href="/brands/toyota/toyota-hyryder-hybrid-2026-price-mileage-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Jo red front look wali image hai uska path yahan daalein -->
+        <img src="/assets/img/cars/fortuner/toyota-hyryder/toyota-hyryder-strong-hybrid-badge-detail.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Toyota Hyryder Hybrid 2026 price, 28kmpl mileage, and hybrid review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Toyota Hyryder Hybrid 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹11.14 - ₹20.19 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+<!-- Toyota Sienna Sidebar Item -->
+<a href="/brands/toyota/toyota-sienna-2026-review.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image path aur Alt text Sienna Hybrid ke hisaab se SEO optimized hai -->
+        <img src="/assets/img/cars/fortuner/sienna/toyota-sienna-2026-exterior-front-design.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Toyota Sienna 2026 hybrid minivan review, 36 MPG mileage, and price details by VishTech Cars">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Toyota Sienna Hybrid 2026</div>
+            <!-- Expected Global Price Range -->
+            <div class="text-danger fw-bold" style="font-size: 10px;">Est. $39,185 - $55,000*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+<!-- Volkswagen Virtus 2026 Sidebar Item -->
+<a href="/brands/volkswagen/volkswagen-virtus-2026-review-price-india.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Jo red front look wali image hai uska path yahan daalein -->
+        <img src="/assets/img/cars/volkswagen/virtus-2026/volkswagen-virtus-2026-gt-line-red-front-look.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Volkswagen Virtus 2026 price, 5-star safety, and GT review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Volkswagen Virtus 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹11.56 - ₹19.41 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+<!-- Volkswagen Taigun 2026 Sidebar Item -->
+<a href="/brands/volkswagen/volkswagen-taigun-2026-review-price-india.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Taigun की येलो या रेड वाली इमेज का पाथ यहाँ डालें -->
+        <img src="/assets/img/cars/volkswagen/taigun/volkswagen-taigun-2026-gt-red-mountain-road.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Volkswagen Taigun 2026 price, 5-star safety, and GT Plus review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Volkswagen Taigun 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹11.70 - ₹20.00 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+<!-- Jeep Wrangler Rubicon 2026 Sidebar Item -->
+<a href="/brands/jeep/jeep-wrangler-rubicon-price-india-2026.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Jo off-road action wali image hai uska path yahan daalein -->
+        <img src="/assets/img/cars/jeep/jeep-wrangler-rubicon-2026/jeep-wrangler-rubicon-2026-featured.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Jeep Wrangler Rubicon 2026 price, off-road specs, and luxury review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Jeep Wrangler Rubicon 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹67.65 - ₹71.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+<!-- Nissan Magnite 2026 Sidebar Item -->
+<a href="/brands/nissan/nissan-magnite-2026-on-road-price-review-india.html" class="list-group-item list-group-item-action py-3">
+    <div class="d-flex align-items-center">
+        <!-- Image Path: Nissan Magnite की रेड या सिल्वर वाली इमेज का पाथ यहाँ डालें -->
+        <img src="/assets/img/cars/nissan/magnite/nissan-magnite-2026-featured-vishtech.webp" class="rounded me-3" style="width: 65px; height: 50px; object-fit: cover;" alt="Nissan Magnite 2026 on-road price, XE AMT CNG specs, and mileage review India">
+        <div>
+            <div class="fw-bold small lh-sm mb-1">Nissan Magnite 2026</div>
+            <div class="text-danger fw-bold" style="font-size: 10px;">₹5.99 - ₹11.50 Lakh*</div>
+        </div>
+    </div>
+</a>
+
+
+
+
+<style>
+    /* Chota sa hover animation clicks badhane ke liye */
+    .vishtechcars-sidebar-item:hover {
+        background-color: #fff5f5 !important; /* Light red hover */
+        transform: translateX(5px);
+        transition: 0.3s;
+    }
+</style>
+
+
+        </div>
+    </div>
+
+    <!-- 4. AD SPACE -->
+    
+</div>
+
+<!-- EMI Logic -->
+
+
+
+
+<script>
+function autoEMI() {
+    let p = document.getElementById('loanAmount').value;
+    let r_input = document.getElementById('interestRate').value;
+    let n_input = document.getElementById('loanTenure').value;
+
+    if (p && r_input && n_input) {
+        let principal = parseFloat(p);
+        let r = parseFloat(r_input) / 12 / 100;
+        let n = parseFloat(n_input) * 12;
+
+        let emi = (principal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        document.getElementById('emiValue').innerText = Math.round(emi).toLocaleString('en-IN');
+    } else {
+        document.getElementById('emiValue').innerText = "0";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function autoFuelSide() {
+    let d = document.getElementById('sideDist').value;
+    let m = document.getElementById('sideMil').value;
+    let p = document.getElementById('sidePrice').value;
+
+    if (d && m && p && m > 0) {
+        let total = (parseFloat(d) / parseFloat(m)) * parseFloat(p);
+        document.getElementById('sideFuelValue').innerText = Math.round(total).toLocaleString('en-IN');
+    } else {
+        document.getElementById('sideFuelValue').innerText = "0";
+    }
+}
+</script>
+
+
+
+

@@ -1,4 +1,5 @@
+# Google Adsense and Search Engine Access
 User-agent: *
 Allow: /
 
-Sitemap: https://egaleeyearchery.com/sitemap.xml
+Sitemap: https://www.vishtechcars.com/sitemap.xml
