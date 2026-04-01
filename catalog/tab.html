@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGE 1: Page Title -->
+    <title>Finger Tabs	Finger Tabs| Eagle Eye Archery India</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/ee-style.css">
+</head>
+<body class="bg-light">
+
+    <div id="header-placeholder"></div>
+
+    <!-- BREADCRUMB -->
+    <section class="py-3 bg-white border-bottom mt-1">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 small fw-bold text-uppercase">
+                    <li class="breadcrumb-item"><a href="/index.html" class="text-success text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/catalog/index.html" class="text-success text-decoration-none">Catalog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">	Finger Tabs</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- SIDEBAR -->
+                <div class="col-lg-3">
+                    <div class="bg-white shadow-sm rounded-4 p-4 sticky-top" style="top: 100px;">
+                        <h6 class="fw-black text-uppercase mb-3 border-bottom pb-2">Archer Accessories</h6>
+                        <ul class="list-unstyled catalog-side-menu small">
+                            <li><a href="/catalog/quivers.html" id="link-quivers">Quivers</a></li>
+                            <li><a href="/catalog/releases.html" id="link-releases">Releases</a></li>
+                            <li><a href="/catalog/tab.html" id="link-tab">TAB / Finger Protection</a></li>
+                            <li><a href="/catalog/wrench.html" id="link-wrench">Wrench & Tools</a></li>
+                            <li><a href="/catalog/puller.html" id="link-puller">Arrow Puller</a></li>
+                            <li><a href="/catalog/t-square.html" id="link-t-square">T-Square</a></li>
+                            <li><a href="/catalog/chest-guards.html" id="link-chest-guards">Chest Guards</a></li>
+                            <li><a href="/catalog/arm-guards.html" id="link-arm-guards">Arm Guards</a></li>
+                            <li><a href="/catalog/caps.html" id="link-caps">Caps and Shirts</a></li>
+                            <li><a href="/catalog/optics.html" id="link-optics">Optics & Binoculars</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PRODUCT GRID -->
+                <div class="col-lg-9">
+                    <div class="mb-4 bg-white p-4 rounded-4 shadow-sm border-start border-success border-5">
+                        <!-- CHANGE 2: Heading -->
+                        <h2 class="fw-black text-uppercase mb-1">	</h2>
+                        <p class="text-muted mb-0">Professional grade archery equipment for elite athletes.</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- CHANGE 3: Yahan 3-4 Products add karein -->
+                        <div class="col-md-4 col-6">
+                            <div class="card h-100 border-0 shadow-sm product-card-catalog p-3 text-center">
+                                <img src="../assets/images/products/new-arrivals.jpg" class="img-fluid rounded mb-3">
+                                <h6 class="fw-bold">Finger Tabs</h6>
+                                <div class="text-success fw-bold">₹ Pricing</div>
+                                <a href="/catalog/product-details.html" class="btn btn-dark btn-sm w-100 mt-3 rounded-pill">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/components/header.html");
+            $("#footer-placeholder").load("/components/footer.html");
+            
+            // Current Page Highlight Logic
+            var path = window.location.pathname;
+            var page = path.split("/").pop().split(".")[0];
+            $('#link-' + page).addClass('active-cat');
+        });
+    </script>
+</body>
+</html>

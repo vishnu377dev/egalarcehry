@@ -1,0 +1,275 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Catalog | Eagle Eye Archery India</title>
+    
+    <!-- CSS Paths (Root-Relative for Vercel Stability) -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/assets/css/ee-style.css">
+    
+    <style>
+             /* Modern Clean Styles */
+        .page-header {
+            background: #111;
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+            border-bottom: 4px solid #198754;
+        }
+        /* Elite UI Custom Styles */
+        .catalog-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.mychoicearchery.com/Foto/Slideshow/22/newproducts_20200709130746.358.jpg') center/cover fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 5px solid #198754;
+        }
+
+        .category-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .category-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(25, 135, 84, 0.2);
+        }
+
+        .cat-img-wrapper {
+            position: relative;
+            padding: 30px;
+            background: #f8f9fa;
+            overflow: hidden;
+        }
+
+        .cat-img-wrapper img {
+            transition: transform 0.6s ease;
+            max-height: 250px;
+            object-fit: contain;
+        }
+
+        .category-card:hover .cat-img-wrapper img {
+            transform: scale(1.1) rotate(3deg);
+        }
+
+        .cat-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(25, 135, 84, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.4s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .category-card:hover .cat-overlay {
+            opacity: 1;
+        }
+
+        .glass-footer {
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        .cat-title {
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #222;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .cat-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #198754;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 10px;
+            font-weight: bold;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div id="header-placeholder"></div>
+<section class="page-header">
+    <div class="container" data-aos="fade-down">
+        <span class="section-tag text-uppercase">Authorized Importer</span>
+        <h1 class="display-3 fw-black text-uppercase">Product Catalog</h1>
+        <p class="lead opacity-75">Explore the World's Best Archery Equipment</p>
+    </div>
+</section>
+    <!-- ELITE HERO SECTION -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h4 class="text-success fw-bold text-uppercase ls-3 mb-3" data-aos="fade-up">Premium Gear</h4>
+            <h1 class="display-2 fw-black text-white text-uppercase mb-0" data-aos="zoom-out" data-aos-delay="200">The Catalog</h1>
+            <div class="bg-success mx-auto mt-3" style="width: 100px; height: 4px;" data-aos="stretch"></div>
+        </div>
+    </section>
+
+    <!-- MAIN CATEGORIES GRID -->
+    <section class="py-5 mt-minus-100">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Category 1: BOWS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="/catalog/compound.html" class="text-decoration-none">
+                        <div class="category-card">
+                            <span class="cat-badge">PREMIUM</span>
+                            <div class="cat-img-wrapper text-center">
+                                <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/25294/xceed2_green_20250829163424.561.jpg&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid" alt="Bows">
+                                <div class="cat-overlay">
+                                    <span class="btn btn-light rounded-pill px-4 fw-bold">EXPLORE BOWS</span>
+                                </div>
+                            </div>
+                            <div class="glass-footer">
+                                <h4 class="cat-title">BOWS</h4>
+                                <small class="text-muted">Compound, Recurve & Target</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Category 2: ARROWS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="/catalog/arrows.html" class="text-decoration-none">
+                        <div class="category-card">
+                            <div class="cat-img-wrapper text-center">
+                                <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/10516/Easton_Vane_X10_Composite_20191102203317.328.png&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid" alt="Arrows">
+                                <div class="cat-overlay">
+                                    <span class="btn btn-light rounded-pill px-4 fw-bold">VIEW ARROWS</span>
+                                </div>
+                            </div>
+                            <div class="glass-footer">
+                                <h4 class="cat-title">ARROWS</h4>
+                                <small class="text-muted">Shafts, Vanes & Components</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Category 3: ACCESSORIES -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="/catalog/accessories-archers.html" class="text-decoration-none">
+                        <div class="category-card">
+                            <div class="cat-img-wrapper text-center">
+                                <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/22324/OMEGA%20MINI%20BLACK_20220624095609.082.jpg&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid" alt="Accessories">
+                                <div class="cat-overlay">
+                                    <span class="btn btn-light rounded-pill px-4 fw-bold">SEE ALL GEAR</span>
+                                </div>
+                            </div>
+                            <div class="glass-footer">
+                                <h4 class="cat-title">ACCESSORIES</h4>
+                                <small class="text-muted">Quivers, Releases & Optics</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Category 4: CASES -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up">
+                    <a href="/catalog/cases.html" class="text-decoration-none">
+                        <div class="category-card">
+                            <div class="cat-img-wrapper text-center">
+                                <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/19285/SI_20200801_1718092_20200802122409.118.JPG&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid" alt="Cases" style="max-height: 200px;">
+                                <div class="cat-overlay">
+                                    <span class="btn btn-light rounded-pill px-4 fw-bold">BOW PROTECTION</span>
+                                </div>
+                            </div>
+                            <div class="glass-footer">
+                                <h4 class="cat-title">CASES & STORAGE</h4>
+                                <small class="text-muted">Heavy Duty Protection for your Bow</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Category 5: TARGETS -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="/catalog/targets.html" class="text-decoration-none">
+                        <div class="category-card">
+                            <div class="cat-img-wrapper text-center">
+                                <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/25614/youyi80cmtarget_20250917124528.058.jpg&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid" alt="Targets" style="max-height: 200px;">
+                                <div class="cat-overlay">
+                                    <span class="btn btn-light rounded-pill px-4 fw-bold">PRACTICE GEAR</span>
+                                </div>
+                            </div>
+                            <div class="glass-footer">
+                                <h4 class="cat-title">TARGETS</h4>
+                                <small class="text-muted">Butts, Faces & Training Tools</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: WHY CHOOSE US -->
+    <section class="py-5 bg-white border-top">
+        <div class="container text-center py-5">
+            <h2 class="fw-black text-uppercase mb-5">Authorized Distributor</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <i class="fas fa-shipping-fast text-success display-4 mb-3"></i>
+                    <h5 class="fw-bold">Fast India Delivery</h5>
+                    <p class="small text-muted px-lg-5">We ensure your equipment reaches you safely across India with premium logistics.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-award text-success display-4 mb-3"></i>
+                    <h5 class="fw-bold">100% Genuine Gear</h5>
+                    <p class="small text-muted px-lg-5">Direct import from global brands like Hoyt, Easton, and PSE Archery.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-user-shield text-success display-4 mb-3"></i>
+                    <h5 class="fw-bold">Expert Support</h5>
+                    <p class="small text-muted px-lg-5">Technical guidance by professional archers to help you select the right gear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        $(function(){
+            // Simplified paths for reliability
+            $("#header-placeholder").load("/components/header.html");
+            $("#footer-placeholder").load("/components/footer.html");
+        });
+    </script>
+</body>
+</html>

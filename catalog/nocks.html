@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Eye Archery | Nocks Catalog</title>
+    <!-- CSS Paths (Absolute paths used for stability) -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/assets/css/ee-style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- BREADCRUMB SECTION -->
+    <section class="py-3 bg-white border-bottom mt-1">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 small fw-bold text-uppercase">
+                    <li class="breadcrumb-item"><a href="/index.html" class="text-success text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/catalog/index.html" class="text-success text-decoration-none">Catalog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Current Category</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- SIDEBAR: MyChoice Style Menu -->
+                <div class="col-lg-3">
+                    <div class="bg-white shadow-sm rounded-4 p-4 sticky-top" style="top: 100px;">
+                        <h6 class="fw-black text-uppercase mb-3 border-bottom pb-2">Main Categories</h6>
+                        <ul class="list-unstyled catalog-side-menu">
+                            <li><a href="/catalog/bows.html">Bows (Compound/Recurve)</a></li>
+                            <li><a href="/catalog/arrows.html" class="active-cat">Arrows & Components</a></li>
+                            <li><a href="/catalog/accessories-archers.html">Accessories for Archers</a></li>
+                            <li><a href="/catalog/accessories-bows.html">Accessories for Bows</a></li>
+                            <li><a href="/catalog/cases.html">Cases (Compound/Recurve)</a></li>
+                            <li><a href="/catalog/targets.html">Targets</a></li>
+                        </ul>
+                        
+                        <h6 class="fw-black text-uppercase mt-4 mb-3 border-bottom pb-2">Sub Categories</h6>
+                        <ul class="list-unstyled catalog-side-menu small">
+                            <li><a href="/catalog/shafts.html">Arrow Shafts</a></li>
+                            <li><a href="/catalog/nocks.html">Nocks</a></li>
+                            <li><a href="/catalog/vanes.html">Vanes</a></li>
+                            <li><a href="/catalog/points.html">Points</a></li>
+                            <li><a href="/catalog/pins.html">Pins</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MAIN PRODUCTS GRID -->
+                <div class="col-lg-9">
+                    <!-- Category Banner/Title -->
+                    <div class="mb-4 bg-white p-4 rounded-4 shadow-sm border-start border-success border-5" data-aos="fade-up">
+                        <h2 class="fw-black text-uppercase mb-1" id="categoryTitle">Nocks</h2>
+                        <p class="text-muted mb-0">Premium professional equipment from world leading brands.</p>
+                    </div>
+
+                    <!-- Toolbar -->
+                    <div class="d-flex justify-content-between align-items-center mb-4 bg-white p-3 rounded shadow-sm">
+                        <p class="mb-0 small text-muted">Showing <strong>All Products</strong></p>
+                        <select class="form-select w-auto border-0 bg-light fw-bold small"><option>Sort By Newest</option></select>
+                    </div>
+
+                    <!-- Grid -->
+                    <div class="row g-4">
+                        
+                        <!-- PRODUCT CARD START (Ise repeat karein) -->
+                        <div class="col-md-4 col-6" data-aos="fade-up">
+                            <div class="card h-100 border-0 shadow-sm product-card-catalog p-3">
+                                <div class="badge bg-success position-absolute top-0 end-0 m-3">IN STOCK</div>
+                                <div class="text-center py-3">
+                                    <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/13303/A%20(8)_20200704190000.699.JPG&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid rounded" alt="Product">
+                                </div>
+                                <div class="card-body text-center p-2">
+                                    <p class="small text-muted text-uppercase fw-bold mb-1">BRAND NAME</p>
+                                    <h6 class="fw-bold mb-2">PRODUCT NAME GOES HERE</h6>
+                                    <div class="text-success fw-black h5">₹ Price</div>
+                                    <a href="/catalog/product-details.html" class="btn btn-dark btn-sm w-100 mt-3 rounded-pill fw-bold">VIEW DETAILS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PRODUCT CARD END -->
+
+                        <!-- Doosra dummy card dikhane ke liye -->
+                        <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card h-100 border-0 shadow-sm product-card-catalog p-3">
+                                <div class="text-center py-3">
+                                    <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/10855/beiter-in-out-0x-x10-nocks-12-pcs_20190908165630.903.jpg&height=400&crop=false&valign=Middle&halign=Center" class="img-fluid rounded" alt="Product">
+                                </div>
+                                <div class="card-body text-center p-2">
+                                    <p class="small text-muted text-uppercase fw-bold mb-1">BRAND NAME</p>
+                                    <h6 class="fw-bold mb-2">ANOTHER ELITE PRODUCT</h6>
+                                    <div class="text-success fw-black h5">₹ Price</div>
+                                    <a href="/catalog/product-details.html" class="btn btn-dark btn-sm w-100 mt-3 rounded-pill fw-bold">VIEW DETAILS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        $(function(){
+            // Paths simplified for root access
+            $("#header-placeholder").load("/components/header.html");
+            $("#footer-placeholder").load("/components/footer.html");
+        });
+    </script>
+</body>
+</html>

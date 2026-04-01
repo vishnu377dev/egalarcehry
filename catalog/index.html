@@ -1,0 +1,361 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Catalog | Eagle Eye Archery India</title>
+    
+    <!-- CSS Paths -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/assets/css/ee-style.css">
+    
+    <style>
+      
+
+
+
+
+
+        /* Premium Catalog Hero Styling */
+.catalog-hero-premium {
+    background: #0b0d0f; /* Dark base */
+    padding: 100px 0;
+    position: relative;
+    border-bottom: 3px solid #198754;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+        radial-gradient(circle at 80% 20%, rgba(25, 135, 84, 0.15) 0%, transparent 40%),
+        linear-gradient(rgba(11, 13, 15, 0.8), rgba(11, 13, 15, 0.8)),
+        url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Pattern background */
+}
+
+.premium-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(25, 135, 84, 0.1);
+    border: 1px solid rgba(25, 135, 84, 0.3);
+    color: #198754;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pulse-icon {
+    width: 8px; height: 8px;
+    background: #198754;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    box-shadow: 0 0 0 rgba(25, 135, 84, 0.4);
+    animation: pulse-green 2s infinite;
+}
+
+.text-success-glow {
+    color: #198754;
+    text-shadow: 0 0 20px rgba(25, 135, 84, 0.5);
+}
+
+/* Floating Animation for Image */
+.floating-bow-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-floating-img {
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.8));
+    animation: float-bow 5s ease-in-out infinite;
+}
+
+.glow-circle {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(25, 135, 84, 0.2) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@keyframes float-bow {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+}
+
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(25, 135, 84, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0); }
+}
+
+.min-vh-60 { min-height: 60vh; }
+.ls-tight { letter-spacing: -1px; }
+        .category-card-new {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid #eee;
+            height: 100%;
+            text-decoration: none !important;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .category-card-new:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: #198754;
+        }
+
+        .img-container {
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background: #fdfdfd;
+            transition: 0.4s;
+        }
+
+        .category-card-new:hover .img-container {
+            background: #f0fdf4; /* Light green on hover */
+        }
+
+        .img-container img {
+            max-height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .category-card-new:hover .img-container img {
+            transform: scale(1.1);
+        }
+
+        .card-details {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card-details h4 {
+            font-weight: 800;
+            color: #222;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-details p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .btn-view {
+            display: inline-block;
+            padding: 8px 25px;
+            background: #198754;
+            color: #fff;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .category-card-new:hover .btn-view {
+            background: #000;
+            padding: 8px 35px;
+        }
+
+        .section-tag {
+            color: #198754;
+            font-weight: bold;
+            letter-spacing: 3px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div id="header-placeholder"></div>
+<!-- ELITE HERO SECTION -->
+<section class="catalog-hero-premium overflow-hidden">
+    <div class="hero-bg-overlay"></div>
+    <div class="container position-relative">
+        <div class="row align-items-center min-vh-60">
+            
+            <!-- Left Side: Typography -->
+            <div class="col-lg-7 text-start" data-aos="fade-right" data-aos-duration="1200">
+                <div class="premium-badge mb-3">
+                    <span class="pulse-icon"></span>
+                    Authorized Importer
+                </div>
+                <h1 class="display-2 fw-black text-white text-uppercase ls-tight mb-3">
+                    Elite <span class="text-success-glow">Catalog</span>
+                </h1>
+                <p class="lead text-light opacity-75 mb-4 pe-lg-5">
+                    Experience the pinnacle of precision. Explore a curated selection of the world's most advanced archery equipment for professional athletes.
+                </p>
+                <div class="hero-stats d-flex gap-4">
+                    <div>
+                        <h4 class="fw-bold mb-0">50+</h4>
+                        <small class="text-success fw-bold text-uppercase ls-1">Brands</small>
+                    </div>
+                    <div class="vr bg-secondary opacity-25"></div>
+                    <div>
+                        <h4 class="fw-bold mb-0">100%</h4>
+                        <small class="text-success fw-bold text-uppercase ls-1">Genuine</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Floating Visual -->
+            <div class="col-lg-5 d-none d-lg-block position-relative" data-aos="zoom-in" data-aos-delay="300">
+                <div class="floating-bow-wrapper">
+                    <!-- Is image link ko aap apne kisi acche bow PNG se replace kar sakte hain -->
+                    <img src="../assets/images/products/new-arrivals.jpg" 
+                         class="img-fluid hero-floating-img" alt="Professional Bow">
+                    <div class="glow-circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+
+    <!-- GRID SECTION -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                
+                <!-- 1. BOWS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="/catalog/compound.html" class="category-card-new">
+                        <div class="img-container">
+                            <img src="../assets/images/products/archery-hoyt-xceed2-riser.jpg" alt="Bows">
+                        </div>
+                        <div class="card-details">
+                            <h4>Bows</h4>
+                            <p>Compound, Recurve & Beginner Sets</p>
+                            <span class="btn-view">VIEW ALL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 2. ARROWS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="/catalog/arrows.html" class="category-card-new">
+                        <div class="img-container">
+                            <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/10516/Easton_Vane_X10_Composite_20191102203317.328.png" alt="Arrows">
+                        </div>
+                        <div class="card-details">
+                            <h4>Arrows</h4>
+                            <p>Shafts, Points, Nocks & Vanes</p>
+                            <span class="btn-view">VIEW ALL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 3. ARCHER GEAR -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="/catalog/accessories-archers.html" class="category-card-new">
+                        <div class="img-container">
+                            <img src="../assets/images/products/archery-release-b3-omega-mini.jpg" alt="Archer Accessories">
+                        </div>
+                        <div class="card-details">
+                            <h4>Archer Gear</h4>
+                            <p>Quivers, Releases & Personal Safety</p>
+                            <span class="btn-view">VIEW ALL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 4. BOW ACCESSORIES -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="/catalog/accessories-bows.html" class="category-card-new">
+                        <div class="img-container">
+                            <img src="../assets/images/products/hoyt-sr-formula-bow-riser.jpg" alt="Bow Accessories">
+                        </div>
+                        <div class="card-details">
+                            <h4>Bow Accessories</h4>
+                            <p>Sights, Stabilizers & Tuning</p>
+                            <span class="btn-view">VIEW ALL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 5. CASES -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="/catalog/cases.html" class="category-card-new">
+                        <div class="img-container">
+                            <img src="https://www.mychoicearchery.com/imghandler.ashx?imagepath=~/Foto/Prodotti/19285/SI_20200801_1718092_20200802122409.118.JPG" alt="Cases">
+                        </div>
+                        <div class="card-details">
+                            <h4>Protection</h4>
+                            <p>Heavy Duty Bow Cases & Bags</p>
+                            <span class="btn-view">VIEW ALL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 6. TARGETS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="/catalog/targets.html" class="category-card-new">
+                        <div class="img-container">
+                            <img src="../assets/images/products/official-world-archery-target-face-80cm.jpg" alt="Targets">
+                        </div>
+                        <div class="card-details">
+                            <h4>Targets</h4>
+                            <p>Faces, Butts & Practice Gear</p>
+                            <span class="btn-view">VIEW ALL</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST SECTION -->
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-black mb-5">Authorized Partner</h2>
+            <div class="row g-4 opacity-50">
+                <div class="col-4 col-md-2"><img src="https://www.mychoicearchery.com/Foto/Produttori/1/Hoyt-logo_20190204113815.148.png" class="img-fluid grayscale" style="max-height: 30px;"></div>
+                <div class="col-4 col-md-2"><img src="https://www.mychoicearchery.com/Foto/Produttori/6/Logo-Easton_20190204113641.197.png" class="img-fluid grayscale" style="max-height: 30px;"></div>
+                <div class="col-4 col-md-2"><img src="https://www.mychoicearchery.com/Foto/Produttori/15/VANGUARD%20LOGO_20230624132127.123.png" class="img-fluid grayscale" style="max-height: 30px;"></div>
+                <div class="col-4 col-md-2"><img src="https://www.mychoicearchery.com/Foto/Produttori/11/logo_sanlida_20230624132228.156.png" class="img-fluid grayscale" style="max-height: 30px;"></div>
+                <div class="col-4 col-md-2"><img src="https://www.mychoicearchery.com/Foto/Produttori/8/SHIBUYA%20LOGO_20230624132615.505.png" class="img-fluid grayscale" style="max-height: 30px;"></div>
+                <div class="col-4 col-md-2"><img src="https://www.mychoicearchery.com/Foto/Produttori/4/logo_beiter_rgb-2016_20181127153836.691.png" class="img-fluid grayscale" style="max-height: 30px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        $(function(){
+            $("#header-placeholder").load("/components/header.html");
+            $("#footer-placeholder").load("/components/footer.html");
+        });
+    </script>
+</body>
+</html>

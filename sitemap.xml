@@ -1,395 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- 1. Main Pages & Tools -->
+  <!-- Main Website Pages -->
   <url>
-    <loc>https://www.vishtechcars.com/</loc>
-    <lastmod>2026-01-10</lastmod>
-    <priority>1.0</priority>
+    <loc>https://egaleeyearchery.com/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.vishtechcars.com/emi-calculator.html</loc>
-    <lastmod>2026-01-10</lastmod>
-    <priority>0.9</priority>
-  </url>
-
-
-  <url>
-    <loc>https://www.vishtechcars.com/tools/fuel-calculator/</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
- <!-- Comparison Category Main Page -->
-  <url>
-    <loc>https://www.vishtechcars.com/categories/comparisons/</loc>
-    <lastmod>2026-01-13</lastmod>
+    <loc>https://egaleeyearchery.com/about-us.html</loc>
     <priority>0.80</priority>
   </url>
-
-  <!-- Today's Viral Blog Post (Tata Punch vs Maruti Fronx) -->
   <url>
-    <loc>https://www.vishtechcars.com/categories/comparisons/tata-punch-2026-vs-maruti-fronx-hybrid.html</loc>
-    <lastmod>2026-01-13</lastmod>
-    <priority>0.90</priority> <!-- High priority because it's a hot topic -->
+    <loc>https://egaleeyearchery.com/services.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/pro-shooters.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/contact-us.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/terms-conditions.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/privacy-policy.html</loc>
+    <priority>0.30</priority>
   </url>
 
-
-    <url>
-    <loc>https://www.vishtechcars.com/categories/comparisons/maruti-dzire-hybrid-vs-honda-amaze-2026.html</loc>
-    <lastmod>2026-01-18</lastmod>
+  <!-- Catalog Main Section -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/index.html</loc>
     <priority>0.90</priority>
   </url>
 
+  <!-- Bows Category -->
   <url>
-    <loc>https://www.vishtechcars.com/categories/comparisons/skoda-kushaq-2026-vs-hyundai-creta.html</loc>
-    <lastmod>2026-01-21</lastmod>
-    <priority>0.90</priority>
+    <loc>https://egaleeyearchery.com/catalog/bows.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/compound.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/recurve.html</loc>
+    <priority>0.70</priority>
   </url>
 
+  <!-- Arrows Category -->
   <url>
-    <loc>https://www.vishtechcars.com/categories/comparisons/maruti-ev-vs-mahindra-be6e-vs-tata-harrier-ev.html</loc>
-    <lastmod>2026-01-25</lastmod>
-    <priority>1.00</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://egaleeyearchery.com/catalog/arrows.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/shafts.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/fletched.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/nocks.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/vanes.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/points.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/pins.html</loc>
+    <priority>0.50</priority>
   </url>
 
+  <!-- Accessories for Archers -->
   <url>
-    <loc>https://www.vishtechcars.com/categories/comparisons/renault-duster-2026-vs-hyundai-creta.html</loc>
-    <lastmod>2026-01-27</lastmod>
-    <priority>1.00</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://egaleeyearchery.com/catalog/accessories-archers.html</loc>
+    <priority>0.70</priority>
   </url>
-  <!-- 2. Category Pages -->
-  <url><loc>https://www.vishtechcars.com/categories/upcoming-cars.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/categories/electric-vehicles.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/categories/luxury-cars.html</loc><priority>0.7</priority></url>
-  
-  <url><loc>https://www.vishtechcars.com/categories/under-10-lakh.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.vishtechcars.com/categories/under-20-lakh.html</loc><priority>0.7</priority></url>
-
- 
-  <!-- 3. Hyundai (Clean URLs) -->
-  <url><loc>https://www.vishtechcars.com/brands/hyundai/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/hyundai/creta.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/hyundai/creta-ev.html</loc><priority>0.9</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/hyundai/exter.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/hyundai/verna.html</loc><priority>0.7</priority></url>
   <url>
-    <loc>https://www.vishtechcars.com/brands/hyundai/hyundai-creta-n-line-review.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <priority>0.8</priority>
-</url>
-
-<url>
-    <loc>https://www.vishtechcars.com/brands/hyundai/hyundai-aura-review-2026.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <priority>0.8</priority>
-</url>
-
-  <!-- 4. Honda (Newly Fixed Folder) -->
-  <url><loc>https://www.vishtechcars.com/brands/honda/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/honda-amaze-2026-launch.html</loc><priority>0.9</priority></url>
-
-  <!-- 5. Mahindra -->
-  <url><loc>https://www.vishtechcars.com/brands/mahindra/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/mahindra/thar-roxx.html</loc><priority>0.9</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/mahindra/xuv3xo.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/mahindra/mahindra-be-6e.html</loc><priority>0.7</priority></url>
+    <loc>https://egaleeyearchery.com/catalog/quivers.html</loc>
+    <priority>0.50</priority>
+  </url>
   <url>
-    <loc>https://www.vishtechcars.com/brands/mahindra/mahindra-xev-9e-review-price-range.html</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.90</priority>
-</url>
-
-<url>
-    <loc>https://www.vishtechcars.com/brands/mahindra/mahindra-bolero-2026-review-price-features.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.90</priority>
-</url>
-
-  <!-- 6. Tata -->
-  <url><loc>https://www.vishtechcars.com/brands/tata/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/tata/nexon.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/tata/punch.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/tata/sierra-ev.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/tata/tata-tiago-review-safety-mileage.html</loc> <lastmod>2026-03-02</lastmod><priority>0.8</priority></url>
-    
-    
-
-
-  <!-- 7. Maruti -->
-  <url><loc>https://www.vishtechcars.com/brands/maruti/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/maruti/evx.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/maruti/fronx.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/maruti/swift.html</loc><priority>0.7</priority></url>
-<url><loc>https://www.vishtechcars.com/brands/maruti/grand-vitara.html</loc><priority>0.7</priority></url>
-<url><loc>https://www.vishtechcars.com/brands/maruti/maruti-suzuki-dzire-2026-price-mileage-safety-review.html</loc><priority>0.8</priority></url>
-<url>
-    <loc>https://www.vishtechcars.com/brands/maruti/maruti-e-vitara-electric-suv-launch-date-price-features.html</loc>
-    <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://www.vishtechcars.com/brands/maruti/new-maruti-alto-2026-launch-price-mileage.html</loc>
-
-  <lastmod>2026-02-10</lastmod>
-  <priority>0.8</priority>
-</url>
-
-
-<!-- Maruti Wagon R 2026 Post -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/maruti/maruti-wagonr-2026-complete-review.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <priority>0.8</priority>
-</url>
-
-
-   <!-- Maruti Brezza 2026 Facelift (New & Trending) -->
-    <url>
-        <loc>https://www.vishtechcars.com/brands/maruti/maruti-brezza-2026-facelift-launch-date-price-features.html</loc>
-        <lastmod>2026-03-13</lastmod>
-        <priority>1.0</priority>
-    </url>
-
-
-
-    <!-- Maruti Baleno 2026 Strong Hybrid Post -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/maruti/maruti-baleno-2026-strong-hybrid-price-mileage-review.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-</url>
-
-
-
-
-<!-- Maruti Ertiga 2026 Family 7-Seater Post -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/maruti/maruti-ertiga-2026-price-7-seater-mileage-india.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-</url>
-
-
-
-
-
-
-<!-- Maruti Celerio 2026 Review Post -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/maruti/maruti-celerio-2026-on-road-price-mileage-review.html</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-</url>
-
-
-  <!-- 8. Skoda -->
-  <url><loc>https://www.vishtechcars.com/brands/skoda/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/skoda/kylaq.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/skoda/slavia.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.vishtechcars.com/brands/skoda/kushaq.html</loc><priority>0.8</priority></url>
-<url><loc>https://www.vishtechcars.com/brands/skoda/kodiaq.html</loc><priority>0.7</priority></url>
-
-<url>
-  <loc>https://www.vishtechcars.com/brands/skoda/skoda-kylaq-2026-comprehensive-review-india.html</loc>
-  <lastmod>2026-02-11</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-
-<!-- 9. Fortuner   (Clean URLs) -->
-  <url><loc>https://www.vishtechcars.com/brands/toyota/</loc><priority>0.8</priority></url>                         
-  <url><loc>https://www.vishtechcars.com/brands/toyota/toyota-mini-fortuner-launch-date-price-india-2026.html</loc><priority>0.8</priority></url>
-
+    <loc>https://egaleeyearchery.com/catalog/releases.html</loc>
+    <priority>0.50</priority>
+  </url>
   <url>
-  <loc>https://www.vishtechcars.com/brands/toyota/toyota-urban-cruiser-ebella-price-range-review.html</loc>
-  <lastmod>2026-03-07</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://www.vishtechcars.com/brands/toyota/toyota-taisor-facelift-2026.html</loc>
-  <lastmod>2026-03-21</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.9</priority>
-</url>
-
-
-<url>
-  <loc>https://www.vishtechcars.com/brands/toyota/toyota-hyryder-hybrid-2026-price-mileage-review.html</loc>
-  <lastmod>2026-03-22</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.9</priority>
-</url>
-
-
-<url>
-  <loc>https://www.vishtechcars.com/brands/toyota/toyota-sienna-2026-review.html</loc>
-  <lastmod>2025-11-10</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.9</priority>
-</url>
-
-
- <!-- 6. renult -->
-  <url><loc>https://www.vishtechcars.com/brands/renult/</loc><priority>0.8</priority></url>
+    <loc>https://egaleeyearchery.com/catalog/tab.html</loc>
+    <priority>0.40</priority>
+  </url>
   <url>
-    <loc>https://www.vishtechcars.com/brands/renault/renault-duster-2026-launch-price-india-review.html</loc>
-    <lastmod>2026-03-11</lastmod>
-    <priority>0.9</priority>
-</url>
-
-
-
-
-<!-- Kia Section -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/kia/</loc>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://www.vishtechcars.com/brands/kia/kia-clavis-review-price-india.html</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
-</url>
-
-
-<url>
-    <loc>https://www.vishtechcars.com/brands/kia/kia-seltos-new-variants-2026-features.html</loc>
-    <lastmod>2024-11-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
-</url>
-
-
-
-
-<!-- MG Motors Section -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/mg/</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-</url>
-
-<!-- MG Hector 2026 Facelift (Trending) -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/mg/hector.html</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-</url>
-
-<!-- MG Windsor EV (Electric Crossover) -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/mg/windsor-ev.html</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
-</url>
-
-
-
-
-
-
-
-<!-- 7. Volkswagen -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/volkswagen/</loc>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://www.vishtechcars.com/brands/volkswagen/volkswagen-virtus-2026-review-price-india.html</loc>
-    <lastmod>2026-03-23</lastmod>
-    <priority>0.9</priority>
-</url>
-
-<url>
-    <loc>https://www.vishtechcars.com/brands/volkswagen/volkswagen-taigun-2026-review-price-india.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.9</priority>
-</url>
-  
-    
-  
-
-
-
-<!-- 8. Jeep India -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/jeep/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <priority>0.8</priority>
-</url>
-
-<url>
-    <loc>https://www.vishtechcars.com/brands/jeep/jeep-wrangler-rubicon-price-india-2026.html</loc>
-    <lastmod>2026-03-24</lastmod>
-    <priority>0.9</priority>
-</url>
-
-
-
-
-
-
-
-<!-- 8. Nissan -->
-<url>
-    <loc>https://www.vishtechcars.com/brands/nissan/</loc>
-    <lastmod>2026-03-28</lastmod>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://www.vishtechcars.com/brands/nissan/nissan-magnite-2026-on-road-price-review-india.html</loc>
-    <lastmod>2026-03-28</lastmod>
-    <priority>0.9</priority>
-</url>
-
-
-
-
-  <!-- 10. Web Stories -->
+    <loc>https://egaleeyearchery.com/catalog/arm-guards.html</loc>
+    <priority>0.40</priority>
+  </url>
   <url>
-    <loc>https://www.vishtechcars.com/web-stories/thar-roxx-story.html</loc>
-    <priority>0.7</priority>
+    <loc>https://egaleeyearchery.com/catalog/chest-guards.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/puller.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/caps.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/optics.html</loc>
+    <priority>0.60</priority>
   </url>
 
-  <!-- Tata Punch vs Fronx Web Story -->
+  <!-- Accessories for Bows -->
   <url>
-    <loc>https://www.vishtechcars.com/web-stories/tata-punch-vs-fronx-story.html</loc>
-    <lastmod>2026-01-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://egaleeyearchery.com/catalog/accessories-bows.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/sights.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/stabilizer.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/strings.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/scope.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/peep.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/plunger.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/rest.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/wrist-sling.html</loc>
+    <priority>0.40</priority>
   </url>
 
-
-    <!-- Skoda Kushaq 2026 Web Story -->
+  <!-- Cases & Targets -->
   <url>
-    <loc>https://www.vishtechcars.com/web-stories/skoda-kushaq-story.html</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <loc>https://egaleeyearchery.com/catalog/cases.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/compound-cases.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/recurve-cases.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/targets.html</loc>
+    <priority>0.70</priority>
   </url>
 
-
-
-
-  <!-- 10. Legal Pages -->
-  <url><loc>https://www.vishtechcars.com/about-us.html</loc><priority>0.3</priority></url>
-  <url><loc>https://www.vishtechcars.com/contact.html</loc><priority>0.3</priority></url>
-  <url><loc>https://www.vishtechcars.com/privacy-policy.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.vishtechcars.com/terms.html</loc><priority>0.3</priority></url>
-  <url><loc>https://www.vishtechcars.com/disclaimer.html</loc><priority>0.8</priority></url>
+  <!-- Product Tools & Detail -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/product-details.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/t-square.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/wrench.html</loc>
+    <priority>0.40</priority>
+  </url>
 
 </urlset>

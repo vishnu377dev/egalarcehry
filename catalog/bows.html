@@ -1,0 +1,128 @@
+<!-- catalog/bows.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bows Catalog | Eagle Eye Archery</title>
+    
+    <!-- CSS Links (Path dhyan se dekhein kyunki ye folder ke andar hai) -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/ee-style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Title Section -->
+    <section class="py-5 bg-dark text-white text-center" style="background: url('../assets/images/banner/inner-bg.jpg') center/cover;">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">CATALOG</h1>
+            <p class="text-uppercase ls-2">Eagle Eye Archery Products</p>
+        </div>
+    </section>
+
+    <!-- Main Catalog Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                
+                <!-- LEFT SIDE: FILTERS (Exactly like your image) -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm p-3 sticky-top" style="top: 100px;">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">SEARCH</h5>
+                        
+                        <div class="mb-3">
+                            <label class="small fw-bold">Keyword</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Search product...">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="small fw-bold">Brand</label>
+                            <select class="form-select form-select-sm">
+                                <option>Vanguard</option>
+                                <option>Hoyt</option>
+                                <option>Mathews</option>
+                                <option>Easton</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="small fw-bold">Category</label>
+                            <select class="form-select form-select-sm">
+                                <option>Bows > Compound</option>
+                                <option>Bows > Recurve</option>
+                                <option>Accessories</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="small fw-bold">Handedness</label>
+                            <select class="form-select form-select-sm">
+                                <option>All</option>
+                                <option>Right Hand</option>
+                                <option>Left Hand</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-success w-100 fw-bold">SEARCH</button>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: PRODUCT LISTING -->
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold m-0 text-uppercase">Product Catalog</h4>
+                        <span class="text-muted small">Showing 1-12 of 48 products</span>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Product Item 1 -->
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="ee-product-card position-relative text-center p-3 h-100">
+                                <span class="ee-badge-new">New</span>
+                                <div class="product-img mb-3">
+                                    <img src="../assets/images/products/archery-release-b3-omega-mini.jpg" class="img-fluid" alt="Product Name">
+                                </div>
+                                <h6 class="fw-bold mb-1">VESTA 1042</h6>
+                                <p class="small text-muted mb-2">Vanguard</p>
+                                <h5 class="text-success fw-bold">₹10,600</h5>
+                                <p class="small border-top pt-2">VARIANTS: 1</p>
+                                <a href="#" class="btn btn-success btn-sm w-100 rounded-0">PRODUCT DETAILS</a>
+                            </div>
+                        </div>
+
+                        <!-- Product Item 2 (Copy-paste karke aur items banayein) -->
+                       
+
+                        <!-- Aur 10-12 products aise hi add karein -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Humne bootstrap.bundle.min.js ko folder mein nahi rakha hai abhi, toh CDN use kar rahe hain -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        AOS.init();
+        // Path check karein components ke liye (.. isliye kyunki hum catalog folder ke andar hain)
+        $(function(){
+            $("#header-placeholder").load("../components/header.html");
+            $("#footer-placeholder").load("../components/footer.html");
+        });
+    </script>
+</body>
+</html>
