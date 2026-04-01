@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Website Pages -->
+  <url>
+    <loc>https://egaleeyearchery.com/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/about-us.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/services.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/pro-shooters.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/contact-us.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/terms-conditions.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/privacy-policy.html</loc>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- Catalog Main Section -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/index.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Bows Category -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/bows.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/compound.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/recurve.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Arrows Category -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/arrows.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/shafts.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/fletched.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/nocks.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/vanes.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/points.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/pins.html</loc>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Accessories for Archers -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/accessories-archers.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/quivers.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/releases.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/tab.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/arm-guards.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/chest-guards.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/puller.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/caps.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/optics.html</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- Accessories for Bows -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/accessories-bows.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/sights.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/stabilizer.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/strings.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/scope.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/peep.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/plunger.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/rest.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/wrist-sling.html</loc>
+    <priority>0.40</priority>
+  </url>
+
+  <!-- Cases & Targets -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/cases.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/compound-cases.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/recurve-cases.html</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/targets.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Product Tools & Detail -->
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/product-details.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/t-square.html</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://egaleeyearchery.com/catalog/wrench.html</loc>
+    <priority>0.40</priority>
+  </url>
+
+</urlset>
